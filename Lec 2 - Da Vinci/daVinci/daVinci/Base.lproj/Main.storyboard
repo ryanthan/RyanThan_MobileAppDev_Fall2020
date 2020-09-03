@@ -15,37 +15,53 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" tag="1" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cPf-vL-nqS">
-                                <rect key="frame" x="73" y="174" width="80" height="36"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                <state key="normal" title="Paintings"/>
-                                <connections>
-                                    <action selector="chooseArt:" destination="BYZ-38-t0r" eventType="touchUpInside" id="BEa-yE-BJR"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" tag="2" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PRV-0l-cPJ">
-                                <rect key="frame" x="257" y="174" width="82" height="36"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                <state key="normal" title="Drawings"/>
-                                <connections>
-                                    <action selector="chooseArt:" destination="BYZ-38-t0r" eventType="touchUpInside" id="AWU-Lj-mr2"/>
-                                </connections>
-                            </button>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="MonaLisa" translatesAutoresizingMaskIntoConstraints="NO" id="QAg-1V-rGq">
-                                <rect key="frame" x="58" y="244" width="299" height="452"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="MonaLisa" translatesAutoresizingMaskIntoConstraints="NO" id="QAg-1V-rGq">
+                                <rect key="frame" x="10" y="179.5" width="394" height="597.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="QAg-1V-rGq" secondAttribute="height" multiplier="151:229" id="7fV-1y-3Fj"/>
+                                    <constraint firstAttribute="width" relation="lessThanOrEqual" constant="440" id="MVd-A7-3ny"/>
+                                    <constraint firstAttribute="height" relation="lessThanOrEqual" constant="598" id="dRY-oE-UEy"/>
+                                </constraints>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Da Vinci Art" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hTL-in-oOg">
-                                <rect key="frame" x="131" y="100" width="152" height="36"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Leonardo da Vinci Art" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hTL-in-oOg">
+                                <rect key="frame" x="78" y="60" width="258" height="33.5"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="105" translatesAutoresizingMaskIntoConstraints="NO" id="HtZ-u5-fUa">
+                                <rect key="frame" x="73.5" y="118.5" width="267" height="36"/>
+                                <subviews>
+                                    <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cPf-vL-nqS">
+                                        <rect key="frame" x="0.0" y="0.0" width="80" height="36"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <state key="normal" title="Paintings"/>
+                                        <connections>
+                                            <action selector="chooseArt:" destination="BYZ-38-t0r" eventType="touchUpInside" id="BEa-yE-BJR"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PRV-0l-cPJ">
+                                        <rect key="frame" x="185" y="0.0" width="82" height="36"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <state key="normal" title="Drawings"/>
+                                        <connections>
+                                            <action selector="chooseArt:" destination="BYZ-38-t0r" eventType="touchUpInside" id="AWU-Lj-mr2"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="hTL-in-oOg" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="6Bf-lO-oQy"/>
+                            <constraint firstItem="QAg-1V-rGq" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" priority="750" constant="-20" id="95l-Ly-jXg"/>
+                            <constraint firstItem="HtZ-u5-fUa" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="9zE-m3-nCD"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="QAg-1V-rGq" secondAttribute="bottom" constant="10" id="CZX-MR-k7v"/>
+                            <constraint firstItem="QAg-1V-rGq" firstAttribute="top" secondItem="HtZ-u5-fUa" secondAttribute="bottom" constant="25" id="R2g-nJ-suF"/>
+                            <constraint firstItem="hTL-in-oOg" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="16" id="hR1-2g-bH6"/>
+                            <constraint firstItem="HtZ-u5-fUa" firstAttribute="top" secondItem="hTL-in-oOg" secondAttribute="bottom" constant="25" id="nED-Fi-ou0"/>
+                            <constraint firstItem="QAg-1V-rGq" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="yMb-eb-71S"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
