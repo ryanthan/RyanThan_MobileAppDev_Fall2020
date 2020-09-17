@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina6_1" orientation="portrait" appearance="light"/>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.3" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina5_9" orientation="landscape" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -12,11 +12,11 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="daVinci" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="812" height="375"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="MonaLisa" translatesAutoresizingMaskIntoConstraints="NO" id="QAg-1V-rGq">
-                                <rect key="frame" x="10" y="179.5" width="394" height="597.5"/>
+                                <rect key="frame" x="577" y="73" width="151" height="229"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="QAg-1V-rGq" secondAttribute="height" multiplier="151:229" id="7fV-1y-3Fj"/>
                                     <constraint firstAttribute="width" relation="lessThanOrEqual" constant="440" id="MVd-A7-3ny"/>
@@ -24,16 +24,16 @@
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Leonardo da Vinci Art" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hTL-in-oOg">
-                                <rect key="frame" x="78" y="60" width="258" height="33.5"/>
+                                <rect key="frame" x="277" y="15.999999999999996" width="258" height="33.666666666666657"/>
                                 <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <stackView opaque="NO" contentMode="scaleToFill" spacing="105" translatesAutoresizingMaskIntoConstraints="NO" id="HtZ-u5-fUa">
-                                <rect key="frame" x="73.5" y="118.5" width="267" height="36"/>
+                                <rect key="frame" x="144" y="99" width="82" height="177"/>
                                 <subviews>
                                     <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cPf-vL-nqS">
-                                        <rect key="frame" x="0.0" y="0.0" width="80" height="36"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="82" height="36"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                         <state key="normal" title="Paintings"/>
                                         <connections>
@@ -41,7 +41,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PRV-0l-cPJ">
-                                        <rect key="frame" x="185" y="0.0" width="82" height="36"/>
+                                        <rect key="frame" x="0.0" y="141" width="82" height="36"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                         <state key="normal" title="Drawings"/>
                                         <connections>
@@ -49,20 +49,47 @@
                                         </connections>
                                     </button>
                                 </subviews>
+                                <variation key="heightClass=compact-widthClass=compact" axis="vertical"/>
                             </stackView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
                             <constraint firstItem="hTL-in-oOg" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="6Bf-lO-oQy"/>
+                            <constraint firstItem="HtZ-u5-fUa" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="93d-ia-r61"/>
                             <constraint firstItem="QAg-1V-rGq" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" priority="750" constant="-20" id="95l-Ly-jXg"/>
                             <constraint firstItem="HtZ-u5-fUa" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="9zE-m3-nCD"/>
+                            <constraint firstItem="QAg-1V-rGq" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="Aej-rF-mwv"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="QAg-1V-rGq" secondAttribute="bottom" constant="10" id="CZX-MR-k7v"/>
                             <constraint firstItem="QAg-1V-rGq" firstAttribute="top" secondItem="HtZ-u5-fUa" secondAttribute="bottom" constant="25" id="R2g-nJ-suF"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="QAg-1V-rGq" secondAttribute="trailing" constant="40" id="TUQ-Fw-EbS"/>
+                            <constraint firstItem="HtZ-u5-fUa" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="100" id="bKp-tU-Mwb"/>
                             <constraint firstItem="hTL-in-oOg" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="16" id="hR1-2g-bH6"/>
                             <constraint firstItem="HtZ-u5-fUa" firstAttribute="top" secondItem="hTL-in-oOg" secondAttribute="bottom" constant="25" id="nED-Fi-ou0"/>
                             <constraint firstItem="QAg-1V-rGq" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="yMb-eb-71S"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="TUQ-Fw-EbS"/>
+                                <exclude reference="93d-ia-r61"/>
+                                <exclude reference="bKp-tU-Mwb"/>
+                                <exclude reference="Aej-rF-mwv"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=compact-widthClass=compact">
+                            <mask key="constraints">
+                                <exclude reference="CZX-MR-k7v"/>
+                                <include reference="TUQ-Fw-EbS"/>
+                                <include reference="93d-ia-r61"/>
+                                <exclude reference="9zE-m3-nCD"/>
+                                <include reference="bKp-tU-Mwb"/>
+                                <exclude reference="nED-Fi-ou0"/>
+                                <exclude reference="95l-Ly-jXg"/>
+                                <include reference="Aej-rF-mwv"/>
+                                <exclude reference="R2g-nJ-suF"/>
+                                <exclude reference="yMb-eb-71S"/>
+                            </mask>
+                        </variation>
                     </view>
                     <connections>
                         <outlet property="artImage" destination="QAg-1V-rGq" id="PgO-uD-HQL"/>
