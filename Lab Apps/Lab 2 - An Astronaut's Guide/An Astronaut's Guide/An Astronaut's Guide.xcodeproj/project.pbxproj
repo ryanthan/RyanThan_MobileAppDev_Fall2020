@@ -16,7 +16,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		1517C3052516EDF700A0E665 /* SpaceGuide.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpaceGuide.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1517C3052516EDF700A0E665 /* AstronautGuide.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AstronautGuide.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1517C3082516EDF700A0E665 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1517C30A2516EDF700A0E665 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		1517C30C2516EDF700A0E665 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -48,7 +48,7 @@
 		1517C3062516EDF700A0E665 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				1517C3052516EDF700A0E665 /* SpaceGuide.app */,
+				1517C3052516EDF700A0E665 /* AstronautGuide.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -84,7 +84,7 @@
 			);
 			name = "An Astronaut's Guide";
 			productName = "An Astronaut's Guide";
-			productReference = 1517C3052516EDF700A0E665 /* SpaceGuide.app */;
+			productReference = 1517C3052516EDF700A0E665 /* AstronautGuide.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -291,7 +291,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "ATLAS.An-Astronaut-s-Guide";
-				PRODUCT_NAME = SpaceGuide;
+				PRODUCT_NAME = AstronautGuide;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -308,7 +308,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "ATLAS.An-Astronaut-s-Guide";
-				PRODUCT_NAME = SpaceGuide;
+				PRODUCT_NAME = AstronautGuide;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
