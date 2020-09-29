@@ -131,5 +131,10 @@ classes.count
 
 
 
+for count in 0...5 {
+    print("Count is \(count)")
+}
 
+var score: Int
 
+score = -9

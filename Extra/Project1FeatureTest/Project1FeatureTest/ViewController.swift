@@ -70,7 +70,7 @@ class ViewController: UIViewController {
         TimerDisplay = count
         let minutes = String(TimerDisplay / 60)
         let seconds = String(TimerDisplay % 60)
-        TimerLabel.text = minutes + " minutes and " + seconds + " seconds"
+        TimerLabel.text = "\(minutes) minutes and \(seconds) seconds"
     }
     
     
