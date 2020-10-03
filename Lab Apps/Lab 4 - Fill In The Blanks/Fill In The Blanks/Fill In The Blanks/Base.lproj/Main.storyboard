@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.3" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="iUC-dd-0ij">
+    <device id="retina6_5" orientation="portrait" appearance="dark"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="o1Z-RA-r7V">
+            <objects>
+                <viewController automaticallyAdjustsScrollViewInsets="NO" id="iUC-dd-0ij" customClass="ViewController" customModule="Fill_In_The_Blanks" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="y8f-hr-adn">
+                        <rect key="frame" x="0.0" y="0.0" width="340" height="700"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="a4o-d8-WHs">
+                                <rect key="frame" x="0.0" y="0.0" width="340" height="700"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IQ5-Ri-ER4">
+                                        <rect key="frame" x="0.0" y="0.0" width="340" height="554.33333333333337"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="OLw-p2-lvY">
+                                                <rect key="frame" x="20" y="35" width="300" height="330.66666666666669"/>
+                                                <subviews>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="oo6-ua-ym0">
+                                                        <rect key="frame" x="0.0" y="0.0" width="300" height="60.666666666666664"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Fill In The Blanks!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zAO-fk-glr">
+                                                                <rect key="frame" x="3.6666666666666572" y="0.0" width="292.66666666666674" height="30.333333333333332"/>
+                                                                <fontDescription key="fontDescription" name="Copperplate" family="Copperplate" pointSize="30"/>
+                                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Give me a..." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="u8l-wc-O5c">
+                                                                <rect key="frame" x="81.000000000000014" y="35.333333333333329" width="138.33333333333337" height="25.333333333333329"/>
+                                                                <fontDescription key="fontDescription" name="Copperplate" family="Copperplate" pointSize="25"/>
+                                                                <nil key="textColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                        </subviews>
+                                                    </stackView>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="25" translatesAutoresizingMaskIntoConstraints="NO" id="yXu-Xt-8qi">
+                                                        <rect key="frame" x="0.0" y="80.666666666666671" width="300" height="34"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Plural Noun" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pja-Rz-A58">
+                                                                <rect key="frame" x="0.0" y="0.0" width="133" height="34"/>
+                                                                <fontDescription key="fontDescription" name="Copperplate" family="Copperplate" pointSize="20"/>
+                                                                <nil key="textColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="0QO-g6-hfu">
+                                                                <rect key="frame" x="158" y="0.0" width="142" height="34"/>
+                                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                                <textInputTraits key="textInputTraits" spellCheckingType="yes" returnKeyType="done"/>
+                                                            </textField>
+                                                        </subviews>
+                                                    </stackView>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="110" translatesAutoresizingMaskIntoConstraints="NO" id="APq-M5-tdH">
+                                                        <rect key="frame" x="0.0" y="134.66666666666666" width="300" height="34"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Verb" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SqN-4a-eOS">
+                                                                <rect key="frame" x="0.0" y="0.0" width="49" height="34"/>
+                                                                <fontDescription key="fontDescription" name="Copperplate" family="Copperplate" pointSize="20"/>
+                                                                <nil key="textColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="zP4-nj-FCU">
+                                                                <rect key="frame" x="159" y="0.0" width="141" height="34"/>
+                                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                                <textInputTraits key="textInputTraits" spellCheckingType="yes" returnKeyType="done"/>
+                                                            </textField>
+                                                        </subviews>
+                                                    </stackView>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="35" translatesAutoresizingMaskIntoConstraints="NO" id="pzS-Te-cgc">
+                                                        <rect key="frame" x="0.0" y="188.66666666666666" width="300" height="32"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Number: 2" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kTQ-57-d5a">
+                                                                <rect key="frame" x="0.0" y="0.0" width="171" height="32"/>
+                                                                <fontDescription key="fontDescription" name="Copperplate" family="Copperplate" pointSize="20"/>
+                                                                <nil key="textColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="2" minimumValue="2" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="Ohn-hk-Dqa">
+                                                                <rect key="frame" x="206" y="0.0" width="94" height="32"/>
+                                                                <color key="backgroundColor" systemColor="systemGroupedBackgroundColor" red="0.94901960780000005" green="0.94901960780000005" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                                        <integer key="value" value="10"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                </userDefinedRuntimeAttributes>
+                                                                <connections>
+                                                                    <action selector="updateNumber1:" destination="iUC-dd-0ij" eventType="valueChanged" id="2eU-X4-eeh"/>
+                                                                </connections>
+                                                            </stepper>
+                                                        </subviews>
+                                                    </stackView>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="35" translatesAutoresizingMaskIntoConstraints="NO" id="bJn-bp-EYb">
+                                                        <rect key="frame" x="0.0" y="240.66666666666669" width="300" height="32"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Number: 2" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iPh-9P-zDn">
+                                                                <rect key="frame" x="0.0" y="0.0" width="171" height="32"/>
+                                                                <fontDescription key="fontDescription" name="Copperplate" family="Copperplate" pointSize="20"/>
+                                                                <nil key="textColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="2" minimumValue="2" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="ZiT-Tv-IHX">
+                                                                <rect key="frame" x="206" y="0.0" width="94" height="32"/>
+                                                                <color key="backgroundColor" systemColor="systemGroupedBackgroundColor" red="0.94901960780000005" green="0.94901960780000005" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                                        <integer key="value" value="10"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                </userDefinedRuntimeAttributes>
+                                                                <connections>
+                                                                    <action selector="updateNumber2:" destination="iUC-dd-0ij" eventType="valueChanged" id="gmH-PZ-OWg"/>
+                                                                </connections>
+                                                            </stepper>
+                                                        </subviews>
+                                                    </stackView>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ob9-HA-Zf8">
+                                                        <rect key="frame" x="0.0" y="292.66666666666669" width="300" height="38"/>
+                                                        <color key="backgroundColor" red="0.027678295969963074" green="0.032188016921281815" blue="0.96166354417800903" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <fontDescription key="fontDescription" name="Copperplate-Bold" family="Copperplate" pointSize="25"/>
+                                                        <state key="normal" title="Fill!">
+                                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                                <integer key="value" value="10"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
+                                                        <connections>
+                                                            <action selector="fillInBlanks:" destination="iUC-dd-0ij" eventType="touchUpInside" id="R8P-xt-mzN"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="TopLeft" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="middleTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xIa-YA-79U">
+                                                <rect key="frame" x="20" y="385.66666666666669" width="300" height="155.00000000000006"/>
+                                                <string key="text">Once upon a time, the kingdom was protected by a group of ____ heroes. The kingdom lived in peace until one day, the evil ____ began their attack! There were ____ ____ in total so it was up to each hero to ____ about ____ ____. Will the heroes prevail or will the ____ overwhelm the kingdom?</string>
+                                                <fontDescription key="fontDescription" name="Copperplate" family="Copperplate" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstItem="OLw-p2-lvY" firstAttribute="leading" secondItem="IQ5-Ri-ER4" secondAttribute="leading" constant="20" id="BbL-BA-fuc"/>
+                                            <constraint firstAttribute="trailing" secondItem="OLw-p2-lvY" secondAttribute="trailing" constant="20" id="C4p-Je-UE8"/>
+                                            <constraint firstItem="xIa-YA-79U" firstAttribute="leading" secondItem="IQ5-Ri-ER4" secondAttribute="leading" constant="20" id="IGq-Sh-wC3"/>
+                                            <constraint firstAttribute="bottom" secondItem="xIa-YA-79U" secondAttribute="bottom" constant="13.5" id="bsf-KW-m9M"/>
+                                            <constraint firstItem="OLw-p2-lvY" firstAttribute="top" secondItem="IQ5-Ri-ER4" secondAttribute="top" constant="35" id="gZB-lN-TXk"/>
+                                            <constraint firstItem="xIa-YA-79U" firstAttribute="top" secondItem="OLw-p2-lvY" secondAttribute="bottom" constant="20" id="hm0-ts-fXp"/>
+                                            <constraint firstAttribute="trailing" secondItem="xIa-YA-79U" secondAttribute="trailing" constant="20" id="smH-6f-57f"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="IQ5-Ri-ER4" firstAttribute="top" secondItem="a4o-d8-WHs" secondAttribute="top" id="4Ex-PA-zhj"/>
+                                    <constraint firstItem="IQ5-Ri-ER4" firstAttribute="width" secondItem="a4o-d8-WHs" secondAttribute="width" id="NbI-Sv-frL"/>
+                                    <constraint firstItem="IQ5-Ri-ER4" firstAttribute="leading" secondItem="a4o-d8-WHs" secondAttribute="leading" id="TrT-j6-YyN"/>
+                                    <constraint firstAttribute="trailing" secondItem="IQ5-Ri-ER4" secondAttribute="trailing" id="kaF-oq-KCo"/>
+                                    <constraint firstAttribute="bottom" secondItem="IQ5-Ri-ER4" secondAttribute="bottom" id="tjl-sd-S21"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="rSW-E0-ZJ2" firstAttribute="trailing" secondItem="a4o-d8-WHs" secondAttribute="trailing" id="1qm-F9-mfq"/>
+                            <constraint firstItem="a4o-d8-WHs" firstAttribute="top" secondItem="y8f-hr-adn" secondAttribute="top" id="GdC-8A-vJd"/>
+                            <constraint firstItem="rSW-E0-ZJ2" firstAttribute="bottom" secondItem="a4o-d8-WHs" secondAttribute="bottom" id="L47-8b-m4V"/>
+                            <constraint firstItem="a4o-d8-WHs" firstAttribute="leading" secondItem="rSW-E0-ZJ2" secondAttribute="leading" id="e02-kN-sNP"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="rSW-E0-ZJ2"/>
+                    </view>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="340" height="700"/>
+                    <connections>
+                        <outlet property="nounTextField" destination="0QO-g6-hfu" id="sEO-6i-Q0M"/>
+                        <outlet property="numLabel1" destination="kTQ-57-d5a" id="dTU-se-oMa"/>
+                        <outlet property="numLabel2" destination="iPh-9P-zDn" id="MKJ-dS-zGQ"/>
+                        <outlet property="numStepper1" destination="Ohn-hk-Dqa" id="8T8-Sw-osw"/>
+                        <outlet property="numStepper2" destination="ZiT-Tv-IHX" id="ZSN-CR-uVU"/>
+                        <outlet property="storyLabel" destination="xIa-YA-79U" id="jG0-2l-QOB"/>
+                        <outlet property="verbTextField" destination="zP4-nj-FCU" id="umf-gQ-fex"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="UJL-w2-75P" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="408" y="335.5322338830585"/>
+        </scene>
+    </scenes>
+</document>
