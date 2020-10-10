@@ -29,7 +29,6 @@ class ViewController: UIViewController {
     
     
     //Learned how to make the timer from here: https://www.youtube.com/watch?v=z2Jq5U-stag
-    //https://stackoverflow.com/questions/34821629/how-to-make-a-simple-countdown-in-minutes-for-swift-ios
     //Function to start/pause the timer
     @IBAction func StartPauseButton(_ sender: Any) {
         if isPaused == true {
