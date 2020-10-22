@@ -14,8 +14,8 @@
 		1517C39A25297D2B00A0E665 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1517C39925297D2B00A0E665 /* Assets.xcassets */; };
 		1517C39D25297D2B00A0E665 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1517C39B25297D2B00A0E665 /* LaunchScreen.storyboard */; };
 		1517C3A5252B9F1300A0E665 /* HennyPenny-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 1517C3A4252B9F1300A0E665 /* HennyPenny-Regular.otf */; };
+		153DA56F254148EE0033EEB2 /* A Ghost Waltz.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 153DA56E254148EE0033EEB2 /* A Ghost Waltz.mp3 */; };
 		1542AD7B252C0AED009A741B /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1542AD7A252C0AED009A741B /* AVFoundation.framework */; };
-		1542AD87252C112B009A741B /* A Ghost Waltz.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 1542AD85252C112B009A741B /* A Ghost Waltz.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,8 +28,8 @@
 		1517C39C25297D2B00A0E665 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1517C39E25297D2B00A0E665 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1517C3A4252B9F1300A0E665 /* HennyPenny-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "HennyPenny-Regular.otf"; sourceTree = "<group>"; };
+		153DA56E254148EE0033EEB2 /* A Ghost Waltz.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "A Ghost Waltz.mp3"; path = "../../../Media/Music/A Ghost Waltz.mp3"; sourceTree = "<group>"; };
 		1542AD7A252C0AED009A741B /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
-		1542AD85252C112B009A741B /* A Ghost Waltz.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "A Ghost Waltz.mp3"; path = "../../../Images:Music:App Icons/Music/A Ghost Waltz.mp3"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,7 +88,7 @@
 		1542AD7E252C0E12009A741B /* Sounds */ = {
 			isa = PBXGroup;
 			children = (
-				1542AD85252C112B009A741B /* A Ghost Waltz.mp3 */,
+				153DA56E254148EE0033EEB2 /* A Ghost Waltz.mp3 */,
 			);
 			path = Sounds;
 			sourceTree = "<group>";
@@ -153,7 +153,7 @@
 			files = (
 				1517C3A5252B9F1300A0E665 /* HennyPenny-Regular.otf in Resources */,
 				1517C39D25297D2B00A0E665 /* LaunchScreen.storyboard in Resources */,
-				1542AD87252C112B009A741B /* A Ghost Waltz.mp3 in Resources */,
+				153DA56F254148EE0033EEB2 /* A Ghost Waltz.mp3 in Resources */,
 				1517C39A25297D2B00A0E665 /* Assets.xcassets in Resources */,
 				1517C39825297D2800A0E665 /* Main.storyboard in Resources */,
 			);
