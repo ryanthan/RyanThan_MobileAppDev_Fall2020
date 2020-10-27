@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">Happy Birthday!</string> <!-- App name in header -->
+    <string name="textView">What day is it?</string> <!-- Default text in TextView -->
+    <string name="hintMessage">Name</string> <!-- Hint text in EditText -->
+    <string name="buttonText">Happy Birthday!</string> <!-- Text in Button -->
+</resources>

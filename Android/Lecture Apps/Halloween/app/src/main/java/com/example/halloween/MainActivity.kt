@@ -8,22 +8,27 @@ import android.widget.ImageView
 import android.widget.TextView
 
 class MainActivity : AppCompatActivity() {
+    //Example of defining variable at the class level for use in any functions
+    lateinit var editName: EditText
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
     }
 
     fun sayBoo(view: View) {
-        //EditText
-        val editName = findViewById<EditText>(R.id.editTextName)
-        val name = editName.text
-
         //TextView
-        val booText = findViewById<TextView>(R.id.textMessage)
-        booText.text = "Happy Halloween " + name + "!"
+        val booText = findViewById<TextView>(R.id.textMessage) //Get the TextView id
 
-        //ImageView
-        val imageGhost = findViewById<ImageView>(R.id.imageView)
-        imageGhost.setImageResource(R.drawable.ghost)
+        //EditText
+        editName = findViewById(R.id.editTextName) //Get the EditText id
+        val name = editName.text //Get the text entered into the EditText
+
+        //Message
+        booText.setText("Happy Halloween " + name + "!") //Set the label text
+
+        //Image
+        val imageGhost = findViewById<ImageView>(R.id.imageView) //Get the imageView id
+        imageGhost.setImageResource(R.drawable.ghost) //Set the image into the imageView
     }
 }
