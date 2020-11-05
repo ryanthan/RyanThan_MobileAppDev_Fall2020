@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Game Recommendations</string>
+    <string name="titleText">Video Game Recommendations</string>
+    <string name="typeOfGame">Type of Game:</string>
+    <string name="radioButton1Text">Action</string>
+    <string name="radioButton2Text">Platformer</string>
+    <string name="radioButton3Text">Role Playing</string>
+    <string name="featuresText">Features:</string>
+    <string name="checkBox1Text">Open-World</string>
+    <string name="checkBox2Text">Engaging Story</string>
+    <string name="checkBox3Text">Great Soundtrack</string>
+    <string name="buttonText">Recommend me a game!</string>
+    <string name="spinnerText">Platform:</string>
+    <string name="switchText">Child Friendly</string>
+    <string-array name="platforms">
+        <item>Playstation</item>
+        <item>Nintendo</item>
+    </string-array>
+</resources>

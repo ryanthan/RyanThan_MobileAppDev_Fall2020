@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Project 2 Features Test</string>
+    <string name="ingredient1">3 1/2 cups of all-purpose flour</string>
+    <string name="ingredient2">1 tablespoon ground ginger</string>
+    <string name="ingredient3">2 teaspoons ground cinnamon</string>
+    <string name="startStopString">START</string>
+    <string name="resetButtonText">RESET</string>
+</resources>
