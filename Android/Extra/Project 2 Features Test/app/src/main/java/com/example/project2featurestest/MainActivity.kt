@@ -1,17 +1,16 @@
 package com.example.project2featurestest
 
+import android.graphics.drawable.Drawable
+import android.graphics.drawable.TransitionDrawable
 import android.media.MediaPlayer
 import android.os.Bundle
 import android.os.CountDownTimer
 import android.view.View
-import android.widget.Button
 import android.widget.ImageView
-import android.widget.TextView
-import androidx.appcompat.app.ActionBar
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.view.isGone
 import androidx.core.view.isVisible
 import kotlinx.android.synthetic.main.activity_main.*
+
 
 class MainActivity : AppCompatActivity() {
     //Variable declarations:
@@ -30,10 +29,10 @@ class MainActivity : AppCompatActivity() {
         mediaPlayer = MediaPlayer.create(this, R.raw.jinglebells) //Initialize the MediaPlayer
     }
 
-    //https://stackoverflow.com/questions/54095875/kotlin-simple-countdown-timer
     //https://developer.android.com/reference/kotlin/android/os/CountDownTimer
+    //https://stackoverflow.com/questions/54095875/kotlin-simple-countdown-timer
     //https://android--code.blogspot.com/2018/04/android-kotlin-countdowntimer-start.html
-    fun timer(millisInFuture: Long, countDownInterval: Long): CountDownTimer{
+    fun timer(millisInFuture: Long, countDownInterval: Long): CountDownTimer {
         return object: CountDownTimer(millisInFuture, countDownInterval) {
             override fun onTick(millisUntilFinished: Long) { //When the timer is active:
                 if(isStopped == true) { //If isStopped is true:
@@ -57,25 +56,45 @@ class MainActivity : AppCompatActivity() {
         }
     }
 
+    //https://stackoverflow.com/questions/7161500/creating-animation-on-imageview-while-changing-image-resource
+    fun setImageDrawableWithAnimation(imageView: ImageView, drawable: Drawable?, duration: Int) {
+        val currentDrawable = imageView.drawable
+        if (currentDrawable == null) {
+            imageView.setImageDrawable(drawable)
+            return
+        }
+        val transitionDrawable = TransitionDrawable(arrayOf(currentDrawable, drawable))
+        imageView.setImageDrawable(transitionDrawable)
+        transitionDrawable.startTransition(duration)
+    }
+
     //Function for when the right arrow is pressed:
     fun rightButton(view: View) {
         imageNumber += 1 //Increment the imageNumber by 1
         when (imageNumber) {
             0 -> { //Display first image
-                imageView.setImageResource(R.drawable.image1)
-                imageView2.setImageResource(R.drawable.circle1)
+                setImageDrawableWithAnimation(imageView, getDrawable(R.drawable.image1), 300)
+                setImageDrawableWithAnimation(imageView2, getDrawable(R.drawable.circle1), 300)
+//                imageView.setImageResource(R.drawable.image1)
+//                imageView2.setImageResource(R.drawable.circle1)
             }
             1 -> { //Display second image
-                imageView.setImageResource(R.drawable.image2)
-                imageView2.setImageResource(R.drawable.circle2)
+                setImageDrawableWithAnimation(imageView, getDrawable(R.drawable.image2), 300)
+                setImageDrawableWithAnimation(imageView2, getDrawable(R.drawable.circle2), 300)
+//                imageView.setImageResource(R.drawable.image2)
+//                imageView2.setImageResource(R.drawable.circle2)
             }
             2 -> { //Display third image
-                imageView.setImageResource(R.drawable.image3)
-                imageView2.setImageResource(R.drawable.circle3)
+                setImageDrawableWithAnimation(imageView, getDrawable(R.drawable.image3), 300)
+                setImageDrawableWithAnimation(imageView2, getDrawable(R.drawable.circle3), 300)
+//                imageView.setImageResource(R.drawable.image3)
+//                imageView2.setImageResource(R.drawable.circle3)
             }
             3 -> { //If the imageNumber is 3, display the first image (to allow for a loop)
-                imageView.setImageResource(R.drawable.image1)
-                imageView2.setImageResource(R.drawable.circle1)
+                setImageDrawableWithAnimation(imageView, getDrawable(R.drawable.image1), 300)
+                setImageDrawableWithAnimation(imageView2, getDrawable(R.drawable.circle1), 300)
+//                imageView.setImageResource(R.drawable.image1)
+//                imageView2.setImageResource(R.drawable.circle1)
                 imageNumber = 0
             }
             else -> println("ERROR") //Display an error
@@ -87,21 +106,29 @@ class MainActivity : AppCompatActivity() {
         imageNumber -= 1 //Decrement imageNumber by 1
         when (imageNumber) {
             -1 -> { //If the imageNumber is -1, display the third image (to allow for a loop)
-                imageView.setImageResource(R.drawable.image3)
-                imageView2.setImageResource(R.drawable.circle3)
+                setImageDrawableWithAnimation(imageView, getDrawable(R.drawable.image3), 300)
+                setImageDrawableWithAnimation(imageView2, getDrawable(R.drawable.circle3), 300)
+//                imageView.setImageResource(R.drawable.image3)
+//                imageView2.setImageResource(R.drawable.circle3)
                 imageNumber = 2
             }
             0 -> { //Display first image
-                imageView.setImageResource(R.drawable.image1)
-                imageView2.setImageResource(R.drawable.circle1)
+                setImageDrawableWithAnimation(imageView, getDrawable(R.drawable.image1), 300)
+                setImageDrawableWithAnimation(imageView2, getDrawable(R.drawable.circle1), 300)
+//                imageView.setImageResource(R.drawable.image1)
+//                imageView2.setImageResource(R.drawable.circle1)
             }
             1 -> { //Display second image
-                imageView.setImageResource(R.drawable.image2)
-                imageView2.setImageResource(R.drawable.circle2)
+                setImageDrawableWithAnimation(imageView, getDrawable(R.drawable.image2), 300)
+                setImageDrawableWithAnimation(imageView2, getDrawable(R.drawable.circle2), 300)
+//                imageView.setImageResource(R.drawable.image2)
+//                imageView2.setImageResource(R.drawable.circle2)
             }
             2 -> { //Display third image
-                imageView.setImageResource(R.drawable.image3)
-                imageView2.setImageResource(R.drawable.circle3)
+                setImageDrawableWithAnimation(imageView, getDrawable(R.drawable.image3), 300)
+                setImageDrawableWithAnimation(imageView2, getDrawable(R.drawable.circle3), 300)
+//                imageView.setImageResource(R.drawable.image3)
+//                imageView2.setImageResource(R.drawable.circle3)
             }
             else -> println("ERROR") //Display an error
         }
@@ -134,7 +161,7 @@ class MainActivity : AppCompatActivity() {
     }
 
     //Function to display the remaining time on the TextView
-    fun displayTime(time: Long){
+    fun displayTime(time: Long) {
         var minutes = time / 60000 //Convert milliseconds to minutes
         var seconds = time / 1000 //Convert milliseconds to seconds
         timerView.setText("Time Remaining: " + minutes + ":" + seconds) //Display the time
