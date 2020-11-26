@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Ho-Ho-Holiday Treats</string>
+    <string name="recipe1Name">Gingerbread Cookies</string>
+    <string name="recipe2Name">Reindeer Brownies</string>
+    <string name="recipe3Name">Bûche de Noël</string>
+    <string name="recipe1Info">Total Time: 3 hrs. | Cook Time: 15 min.  Servings: 24-36 Cookies</string>
+    <string name="ingredientsTextView">Ingredients:</string>
+    <string name="timerTextView">Timer:</string>
+    <string name="startStopButtonText">START</string>
+    <string name="resetButtonText">RESET</string>
+    <string name="recipeTextView">Recipe:</string>
+    <string name="viewRecipeButtonText">View Recipe On The Website</string>
+    <string name="citationTextView">Citation:</string>
+    <string name="shoppingListButtonText">Add To Shopping List</string>
+    <string name="recipe4Name">Christmas Lights Cupcakes</string>
+</resources>
